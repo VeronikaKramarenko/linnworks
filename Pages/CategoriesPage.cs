@@ -8,9 +8,7 @@ namespace linnworksTest.Pages
 {
     class CategoriesPage : MainPage
     {
-        public CategoriesPage() : base("Categories page", By.TagName("app-fetch-category"))
-        {
-        }
+        public CategoriesPage() : base("Categories page", By.TagName("app-fetch-category")) { }
 
         public BaseElement GetCreateNewCategoryButton()
         {

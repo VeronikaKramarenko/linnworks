@@ -1,22 +1,12 @@
 ﻿using linnworksTest.Elements;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace linnworksTest.Pages
 {
     class MainPage : BasePage
     {
-        public MainPage() : base("Main page", By.XPath("//a[@class='navbar-brand']"))
-        {
-
-        }
-
-        public MainPage(string Name, By Locator) : base(Name, Locator)
-        {
-
-        }
+        public MainPage() : base("Main page", By.XPath("//a[@class='navbar-brand']")){}
+        public MainPage(string Name, By Locator) : base(Name, Locator) {}
 
         public BaseElement GetHomeButton()
         {

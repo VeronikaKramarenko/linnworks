@@ -8,10 +8,7 @@ namespace linnworksTest.Pages
 {
     class LoginPage : MainPage
     {
-
-        public LoginPage() : base("Login page", By.Id("token"))
-        {
-        }
+        public LoginPage() : base("Login page", By.Id("token")) { }
 
         public BaseElement GetTokenTextField()
         {
@@ -22,6 +19,7 @@ namespace linnworksTest.Pages
         {
             return new BaseElement("Login button", By.XPath("//button[@type='submit']"));
         }
+
         public BaseElement GetInvalidTokenMessage()
         {
             return new BaseElement("Invalid token message", By.XPath("//div[@class='alert alert-danger' and contains(.,'Invalid token.')]"));
